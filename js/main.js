@@ -5,7 +5,7 @@ const elNewsList = document.querySelector(".js-news-list");
 
 
 
-fetch('https://newsapi.org/v2/everything?qInTitle=bitcoin&language=ru&apiKey=94d05747d7344d7391264e6dacae98ad')
+fetch('https://newsapi.org/v2/everything?qInTitle=bitcoin&language=ru&apiKey=a2f4b2cdca2b4a92b14c43fc8f778303')
 .then(response => response.json())
 .then(data => {
   if (data.status === 'ok') {
@@ -23,5 +23,7 @@ fetch('https://newsapi.org/v2/everything?qInTitle=bitcoin&language=ru&apiKey=94d
       elNewsFragment.appendChild(elNewsItem);
     });
     elNewsList.appendChild(elNewsFragment);
+  }else{
+    console.log("tamom");
   }
 });
