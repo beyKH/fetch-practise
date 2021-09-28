@@ -10,37 +10,26 @@
 </head>
 <body>
 
-  <div class="container-made container-sm py-5">
-
-    <h1 class="text-center mb-5">TOPIC</h1>
-
-    <form class="js-form" action="https://echo.htmlacademy.ru" method="GET">
-       <div class="box row">
-
-        <div class="col-lg-4">
-          <input class="js-input form-control col-lg-4 d-block mb-2" type="text" required>
-        </div>
-
-         <div class="col-lg-4">
-           <button class="js-submit btn-danger form-control col-lg-4" type="submit">Submit</button>
-         </div>
-
-        <div class="col-lg-4">
-          <output class="output-wrapper form-control col-lg-4 d-block mb-2">
-            <span>Result: </span>
-            <span class="js-output"></span>
-          </output>
-        </div>
-
-
-
-
-       </div>
-    </form>
-
-
+  <div class="container py-5">
+    <div class="row js-news-list"></div>
   </div>
 
+  <template id="news-template">
+    <div class="mb-4 col-md-4 col-lg-3 ">
+      <div class="bg-white shadow-lg rounded p-2 h-100">
+        <img class="img-fluid rounded news-img" height="150"
+        src="http://resources.finance.ua/ru/news/image-repost?id=500680"
+        alt="" width="">
+        <div class="py-3 px-2">
+          <h3 class="news-title h6">Apple первой в США подорожала до 2,5 триллиона долларов</h3>
+          <div class="d-flex justify-content-between">
+            <p class="news-author">Andry Brown</p>
+            <a class="news-link" href="" target="_blank">article</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
